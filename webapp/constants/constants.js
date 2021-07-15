@@ -22,7 +22,7 @@
         	APP : "idAppEstadoCuenta"
     	},
     	URI: {
-    		CURRENT_USER : "/services/userapi/currentUser",
+    		CURRENT_USER : "/services/userapi/currentUser x",
     		LISTA_CLIENTES : "/sap/opu/odata/sap/ZSCP_ZCAP_GET_CUSTOMER_srv/ZSCP_ZCAP_GET_CUSTOMERSet?",
     		LISTA_SUBCLIENTES: "/sap/opu/odata/sap/ZSCP_ZCAP_GET_AGENCIA_srv/ZSCP_ZCAP_GET_AGENCIASet?",
     		DATOS_TABLA : "/sap/opu/odata/sap/zscp_zcap_clie_ctacte2_srv/ZSCP_ZCAP_CLIE_CTACTE2Set?",
