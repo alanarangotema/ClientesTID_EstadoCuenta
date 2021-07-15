@@ -1,0 +1,49 @@
+{
+    "facturas":[{
+    	"CodCliente": "415642",
+        "NomCliente": "TEST S.A",
+        "ClaseDoc": "FC",
+        "Factura": "01f12345670",
+        "Periodo": "2018/04",
+        "OrdenPublicidad": "0123456789",
+        "Anunciante": "ANUNTEST",
+        "FechaDoc": "20/04/2018",
+        "FechaVence": "20/05/2018",
+        "Importe": "38.754,22",
+        "Moneda": "ARS",
+        "Orden": "456780",
+        "Senal": "",
+        "RangoDemora": ">365"
+    },{
+    	"CodCliente": "415642",
+        "NomCliente": "TEST S.A",
+        "ClaseDoc": "FA",
+        "Factura": "01f12345671",
+        "Periodo": "2018/05",
+        "OrdenPublicidad": "0123457789",
+        "Anunciante": "ANUNTEST2",
+        "FechaDoc": "28/04/2018",
+        "FechaVence": "20/05/2018",
+        "Importe": "6.243,18",
+        "Moneda": "ARS",
+        "Orden": "012345",
+        "Senal": "TNT",
+        "RangoDemora": ">365"
+    },{
+    	"CodCliente": "415642",
+        "NomCliente": "TEST S.A",
+        "ClaseDoc": "FA",
+        "Factura": "01f12345672",
+        "Periodo": "2018/12",
+        "OrdenPublicidad": "0123457789",
+        "Anunciante": "ANUNTEST2",
+        "FechaDoc": "18/11/2018",
+        "FechaVence": "20/05/2018",
+        "Importe": "433.433,54",
+        "Moneda": "ARS",
+        "Orden": "012399",
+        "Senal": "TCM",
+        "RangoDemora": ">365"
+    }] 
+    
+}

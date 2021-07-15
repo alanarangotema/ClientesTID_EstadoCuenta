@@ -1,0 +1,35 @@
+{
+    "application": {
+        "id": "",
+        "title": "estadocuenta.EstadoCuenta.EstadoCuenta",
+        "description": "Estado de Cuenta",
+        "type": "SAP_UI5_Component",
+        "componentUrl": "/",
+        "appUrl": "#EstadoCuenta-Display",
+        "navigationComponentName": "estadocuenta.EstadoCuenta",
+        "intentSemanticObject": "EstadoCuenta",
+        "intentAction": "Display",
+        "html5ApplicationName": "estadocuenta",
+        "HCPParentApplicationName": ""
+    },
+    "assignment": {
+        "groups": [
+            "e01f7e47-82d8-4df0-8e53-da96636f87b7-1541709296226"
+        ],
+        "contentPackages": [
+            "04d48278-ca96-4ed1-86b7-a83d6dee737a-1541709325156"
+        ],
+        "categories": []
+    },
+    "tile": {
+        "type": "StaticTile",
+        "title": "Estado de Cuenta",
+        "subtitle": "",
+        "searchKeywords": "Estado de Cuenta,",
+        "displayIconUrl": "sap-icon://approvals",
+        "displayInfoText": "",
+        "size": "1x1",
+        "serviceURL": "",
+        "refreshInterval": ""
+    }
+}

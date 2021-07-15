@@ -1,0 +1,11 @@
+{
+    "clientes":[{
+    	"CodCliente": "415642",
+        "NomCliente": "TEST S.A"
+    },
+	{
+    	"CodCliente": "415644",
+        "NomCliente": "OTROTEST S.A"
+    }] 
+    
+}

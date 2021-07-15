@@ -1,0 +1,35 @@
+{
+    "facturas":[{
+    	"CodCliente": "415644",
+        "NomCliente": "OTROTEST S.A",
+        "ClaseDoc": "NC",
+        "Factura": "01f12345672",
+        "Periodo": "2018/04",
+        "OrdenPublicidad": "0132157789",
+        "Anunciante": "ANUNTEST3",
+        "FechaDoc": "07/09/2018",
+        "FechaVence": "20/05/2018",
+        "Importe": "126.467,77",
+        "Moneda": "ARS",
+        "Orden": "765234",
+        "Senal": "",
+        "RangoDemora": ">365"
+    },
+    {
+    	"CodCliente": "415644",
+        "NomCliente": "OTROTEST S.A",
+        "ClaseDoc": "FC",
+        "Factura": "01f12345674",
+        "Periodo": "2018/04",
+        "OrdenPublicidad": "0132157789",
+        "Anunciante": "ANUNTEST3",
+        "FechaDoc": "07/09/2018",
+        "FechaVence": "20/05/2018",
+        "Importe": "3.445,77",
+        "Moneda": "ARS",
+        "Orden": "765234",
+        "Senal": "TCM",
+        "RangoDemora": ">365"
+    }] 
+    
+}

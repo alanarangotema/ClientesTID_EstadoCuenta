@@ -1,0 +1,200 @@
+{
+	"_version": "1.8.0",
+	"sap.app": {
+		"id": "estadocuenta.EstadoCuenta",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "servicecatalog.connectivityComponentForManifest",
+			"version": "0.0.0"
+		},
+		"dataSources": {
+			"ZSCP_ZCAP_CLIE_CTACTE2_SRV": {
+				"uri": "/sap/opu/odata/sap/ZSCP_ZCAP_CLIE_CTACTE2_SRV/",
+				"type": "OData",
+				"settings": {
+					"localUri": "localService/metadata.xml"
+				}
+			},
+			"ZSCP_READ_PDF_SRV_01": {
+				"uri": "/sap/opu/odata/sap/ZSCP_READ_PDF_SRV_01/",
+				"type": "OData",
+				"settings": {
+					"localUri": "localService/ZSCP_READ_PDF_SRV_01/metadata.xml"
+				}
+			},
+			"ZSCP_READ_PDF_CTA_CTE_SRV": {
+				"uri": "/sap/opu/odata/sap/ZSCP_READ_PDF_CTA_CTE_SRV/",
+				"type": "OData",
+				"settings": {
+					"localUri": "localService/ZSCP_READ_PDF_CTA_CTE_SRV/metadata.xml"
+				}
+			},
+			"ZSCP_ZCAP_GET_CUSTOMER_SRV": {
+				"uri": "/sap/opu/odata/sap/ZSCP_ZCAP_GET_CUSTOMER_SRV/",
+				"type": "OData",
+				"settings": {
+					"localUri": "localService/ZSCP_ZCAP_GET_CUSTOMER_SRV/metadata.xml"
+				}
+			},
+			"ZSCP_ZCAP_GET_AGENCIA_SRV": {
+				"uri": "/sap/opu/odata/sap/ZSCP_ZCAP_GET_AGENCIA_SRV/",
+				"type": "OData",
+				"settings": {
+					"localUri": "localService/ZSCP_ZCAP_GET_AGENCIA_SRV/metadata.xml"
+				}
+			}
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_hcb",
+			"sap_belize"
+		]
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "estadocuenta.EstadoCuenta.view.ViewMain",
+			"type": "JS",
+			"id": "ViewMain"
+		},
+		"dependencies": {
+			"minUI5Version": "1.60.1",
+			"libs": {
+				"sap.ui.layout": {},
+				"sap.ui.table": {
+					"minVersion": ""
+				},
+				"sap.ui.commons": {
+					"minVersion": ""
+				},
+				"sap.ui.core": {
+					"minVersion": ""
+				},
+				"sap.m": {
+					"minVersion": ""
+				}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "estadocuenta.EstadoCuenta.i18n.i18n"
+				}
+			},
+			"clieCtaCte": {
+				"type": "sap.ui.model.odata.v2.ODataModel",
+				"settings": {
+					"defaultOperationMode": "Server",
+					"defaultBindingMode": "OneWay",
+					"defaultCountMode": "Request"
+				},
+				"dataSource": "ZSCP_ZCAP_CLIE_CTACTE2_SRV",
+				"preload": true
+			},
+			"PDF": {
+				"type": "sap.ui.model.odata.v2.ODataModel",
+				"settings": {
+					"defaultOperationMode": "Server",
+					"defaultBindingMode": "OneWay",
+					"defaultCountMode": "Request"
+				},
+				"dataSource": "ZSCP_READ_PDF_SRV_01",
+				"preload": true
+			},
+			"PDFCtaCte": {
+				"type": "sap.ui.model.odata.v2.ODataModel",
+				"settings": {
+					"defaultOperationMode": "Server",
+					"defaultBindingMode": "OneWay",
+					"defaultCountMode": "Request"
+				},
+				"dataSource": "ZSCP_READ_PDF_CTA_CTE_SRV",
+				"preload": true
+			},
+			"clients": {
+				"type": "sap.ui.model.odata.v2.ODataModel",
+				"settings": {
+					"defaultOperationMode": "Server",
+					"defaultBindingMode": "OneWay",
+					"defaultCountMode": "Request"
+				},
+				"dataSource": "ZSCP_ZCAP_GET_CUSTOMER_SRV",
+				"preload": true
+			},
+			"subclients": {
+				"type": "sap.ui.model.odata.v2.ODataModel",
+				"settings": {
+					"defaultOperationMode": "Server",
+					"defaultBindingMode": "OneWay",
+					"defaultCountMode": "Request"
+				},
+				"dataSource": "ZSCP_ZCAP_GET_AGENCIA_SRV",
+				"preload": true
+			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "JS",
+				"async": true,
+				"viewPath": "estadocuenta.EstadoCuenta.view",
+				"controlAggregation": "pages",
+				"controlId": "idAppControl",
+				"clearControlAggregation": false
+			},
+			"routes": [
+				{
+					"name": "RouteViewMain",
+					"pattern": "RouteViewMain",
+					"target": [
+						"TargetViewMain"
+					]
+				}
+			],
+			"targets": {
+				"TargetViewMain": {
+					"viewType": "JS",
+					"transition": "slide",
+					"clearControlAggregation": false,
+					"viewName": "ViewMain"
+				}
+			}
+		}
+	},
+	"sap.platform.hcp": {
+		"uri": "webapp",
+		"_version": "1.1.0"
+	}
+}

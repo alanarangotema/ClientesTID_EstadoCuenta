@@ -1,0 +1,98 @@
+/* Enter your custom styles here */
+.totalTabla{
+	font-size: 22px;
+}
+.sapMBtnFacturas {
+    height: 3rem;
+    margin: 0;
+    padding: 10px !important;
+    vertical-align: top;
+    border: none;
+    background-color: transparent;
+    min-width: 170px;
+}
+
+.sapMBtnLimpiarFiltros {
+    height: 3rem;
+    margin: 0;
+    padding: 10px !important;
+    vertical-align: top;
+    border: none;
+    background-color: transparent;
+    min-width: 170px;
+    float:right;
+}
+
+.controlFiltro {
+
+    width: 30% !important;
+}
+
+.filtroDocNoDesc {
+    padding-top: 10px;
+}
+
+.labelFiltro {
+    padding: 10px;
+    padding-top: 15px;
+    text-align: right;
+    min-width: 170px;
+    width:15%;
+}
+.labelDocNoDesc {
+    padding: 10px;
+    padding-top: 15px;
+    text-align: right;
+    min-width: 170px;
+    width:15%;
+}
+
+@media only screen and (max-width: 1035px) {
+.sapMBtnFacturas {
+    height: 3rem;
+    margin: 0;
+    padding: 10px !important;
+    vertical-align: top;
+    border: none;
+    background-color: transparent;
+    width: 30%;
+}
+
+.sapMBtnLimpiarFiltros {
+    height: 3rem;
+    margin: 0;
+    padding: 10px !important;
+    vertical-align: top;
+    border: none;
+    background-color: transparent;
+    width: 30%;
+    float:none;
+}
+
+.controlFiltro {
+    left: 10px !important;
+    width: 85% !important;
+}
+
+.filtroDocNoDesc {
+    padding-top: 10px;
+    left: 10px;
+}
+
+.labelFiltro {
+    padding: 10px;
+    padding-top: 15px;
+    text-align: left !important;
+    min-width: 170px;
+    width:100%;
+}
+
+.labelDocNoDesc {
+    padding: 10px;
+    padding-top: 15px;
+    text-align: left !important;
+    min-width: 170px;
+    width:fit-content;
+}
+
+}
