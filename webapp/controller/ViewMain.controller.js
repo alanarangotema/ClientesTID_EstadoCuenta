@@ -22,6 +22,7 @@ sap.ui.define([
 			});
 			*/
 			//Requires
+			//otro coment
 			jQuery.sap.require("sap.ui.core.util.File"); //se agrega para poder guardar archivos al generar PDF, CSV, etc
 			
 			this.getView().setModel(Model.createClientListModel(), "clients");
