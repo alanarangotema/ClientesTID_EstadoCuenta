@@ -16,6 +16,6 @@ AppVariantPreviewPayload.zip
 mergedManifestDescriptor.json
 APIExternalProducer.js
 .*/APIExternalProducer.js
+/webapp/constants/constants.js
 neo-app.json
-webapp/constants/
 /webapp/manifest.json
