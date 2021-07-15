@@ -17,5 +17,5 @@ mergedManifestDescriptor.json
 APIExternalProducer.js
 .*/APIExternalProducer.js
 neo-app.json
-/webapp/constants/
+webapp/constants/
 /webapp/manifest.json
